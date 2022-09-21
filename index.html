@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>short-css</title>
+
+  <link rel="stylesheet" href="all.css">
+  <script src="all.js" data-console="off"></script>
+
+  <style>
+    /* :root {
+      --red: rgb(188, 39, 39);
+    } */
+  </style>
+
+</head>
+
+<body class="theme-black ">
+
+
+
+
+  <nav class="line">
+    <div class="wrapper" flex="space">
+      <p class="m-5+10" text="24 bold">blickCss</p>
+      <div flex="30">
+        <p hover="line-right">доки</p>
+        <p hover="line-left">контакти</p>
+        <img height="25" src="https://img.icons8.com/ios-filled/344/first-quarter.png" id="themeBtn" alt="change-theme">
+      </div>
+    </div>
+  </nav>
+  <main>
+    <div class="wrapper">
+      <div class="mt-20" flex="col-start 20">
+        <h3>Що це за blickCss?</h3>
+        <p><b>blickCss</b> - це маленька css бібліотека (25кб) яка допоможе вам швидко та зручно створювати чудові веб-сайти та
+          веб-додатки. <br> До речі цей сайт зроблений повністю за допомогою цієї бібліотеки.</p>
+        <h3>Як мені почати?</h3>
+        <p>Щоб почати користуватися цією бібліотекою, тобі потрібно виконати 2 кроки.</p>
+        <p text="lh-larger">
+          1 Крок - Додай код нижче в тег
+          <span class="bg-green round-5 p-5 c-white ">
+            &lthead&gt
+          </span>
+        </p>
+
+        <div class="full">
+          <p class="inline-block round-5 full gray-3 c-white p-10 select-all">
+            &ltlink rel="stylesheet" href="https://blick.netlify.app/all.min.css">
+            <br>
+            &ltscript src="https://blick.netlify.app/all.min.js">&lt/script>
+          </p>
+          <p text="center">click to select</p>
+        </div>
+
+
+
+
+        <p>2 Крок - Ознайомся з документацією</p>
+        <button class="fill blue" text="white">перейти до документації</button>
+
+      </div>
+      <hr>
+      <div>
+        <h3>Приклади</h3>
+        <hr>
+        <p class="mb-20">select, input, textarea</p>
+        <div>
+          <p>дефолтні (без класів)</p>
+          <div flex="ai-s 20 wrap" class="mt-20">
+            <select>
+              <option hidden>some select</option>
+              <option>item 1</option>
+              <option>item 2</option>
+              <option>item 3</option>
+              <option>item 4</option>
+            </select>
+
+            <input type="text" placeholder="some input">
+
+            <textarea placeholder="some textarea" rows="5"></textarea>
+          </div>
+
+            <p>class="fill"</p>
+            <div flex="ai-s 20 wrap" class="mt-20">
+              <select class="fill">
+                <option hidden>some select</option>
+                <option>item 1</option>
+                <option>item 2</option>
+                <option>item 3</option>
+                <option>item 4</option>
+              </select>
+
+              <input class="fill" type="text" placeholder="some input">
+
+              <textarea class="fill" placeholder="some textarea" rows="5"></textarea>
+            </div>
+
+            <p>class="fill orange fit large"</p>
+            <div flex="ai-s 20 wrap" class="mt-20">
+              <select class="fill orange larger fit">
+                <option hidden>some select</option>
+                <option>item 1</option>
+                <option>item 2</option>
+                <option>item 3</option>
+                <option>item 4</option>
+              </select>
+
+              <input class="fill orange larger fit" type="text" placeholder="some input">
+
+              <textarea class="fill orange larger fit" placeholder="some textarea" rows="5"></textarea>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <p class="mb-20">buttons</p>
+
+        <div flex="col ai-s 20">
+          <div flex="col-start 20">
+            <p text="mono" class="select-all">&ltbutton>&lt/button></p>
+            <button class="fit">click me</button>
+          </div>
+
+          <div flex="col-start 20">
+            <p text="mono" class="select-all"> class="fill" </p>
+            <button class="fill fit">click me</button>
+          </div>
+
+          <div flex="col-start 20">
+            <p text="mono" class="select-all"> class="line red </p>
+            <button class="line red fit">click me</button>
+          </div>
+
+          <div flex="col-start 20">
+            <p text="mono" class="select-all"> class="fill red" </p>
+            <button class="fill red fit">click me</button>
+          </div>
+
+          <div flex="col-start 20">
+            <p text="mono" class="select-all"> class="fill red-3" </p>
+            <button class="fill red-3 fit">click me</button>
+          </div>
+
+          <div flex="col-start 20">
+            <p text="mono" class="select-all"> class="fill round" </p>
+            <button class="fill round fit">click me</button>
+          </div>
+
+          <div flex="col-start 20">
+            <p text="mono" class="select-all"> class="fill sharp" </p>
+            <button class="fill sharp fit">click me</button>
+          </div>
+
+          <div flex="col-start 20">
+            <p text="mono" class="select-all"> class="fill leaf" </p>
+            <button class="fill leaf fit">click me</button>
+          </div>
+
+          <div flex="col-start 20">
+            <p text="mono" class="select-all"> class="fill leaf-right" </p>
+            <button class="fill leaf-right fit">click me</button>
+          </div>
+
+          <div flex="col-start 20">
+            <p text="mono" class="select-all"> class="fill smaller" </p>
+            <button class="fill smaller fit">click me</button>
+          </div>
+
+          <div flex="col-start 20">
+            <p text="mono" class="select-all"> class="fill small" </p>
+            <button class="fill small fit">click me</button>
+          </div>
+
+          <div flex="col-start 20">
+            <p text="mono" class="select-all"> class="fill large" </p>
+            <button class="fill large fit">click me</button>
+          </div>
+
+          <div flex="col-start 20">
+            <p text="mono" class="select-all"> class="fill larger" </p>
+            <button class="fill larger fit">click me</button>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </main>
+  <footer class="line large mt-20">
+    <div class="wrapper">
+      <p text="center">copyright © 2022</p>
+    </div>
+  </footer>
+
+
+
+  <script>
+    let theme;
+    let ls = localStorage.themeBlick
+
+    if (ls) theme = ls
+    else theme = 'dark'
+
+    if (theme == 'dark') {
+      document.body.classList.add('theme-black')
+      themeBtn.classList.add('invert')
+    } else {
+      document.body.classList.remove('theme-black')
+      themeBtn.classList.remove('invert')
+    }
+
+
+    function themeSwitcher() {
+      if (theme == 'dark') {
+        document.body.classList.remove('theme-black')
+        themeBtn.classList.remove('invert')
+        theme = 'light'
+      } else {
+        document.body.classList.add('theme-black')
+        themeBtn.classList.add('invert')
+        theme = 'dark'
+      }
+      localStorage.themeBlick = theme
+    }
+
+
+    themeBtn.onclick = themeSwitcher
+
+
+
+
+  </script>
+
+
+</body>
+
+</html>
